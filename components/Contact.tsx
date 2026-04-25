@@ -119,12 +119,12 @@ export default function Contact() {
             className="glass glow-card grid gap-5 rounded-3xl p-8 lg:col-span-3"
           >
             <div className="grid gap-5 sm:grid-cols-2">
-              <Field name="name" label="Your Name" placeholder="Jane Doe" required />
+              <Field name="name" label="Your Name" placeholder="Talal Khazen" required />
               <Field
                 name="email"
                 label="Email"
                 type="email"
-                placeholder="jane@brand.com"
+                placeholder="talal@brand.com"
                 required
               />
             </div>

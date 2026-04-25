@@ -12,7 +12,7 @@ export default function Footer() {
           Tripoli, Lebanon.
         </p>
         <div className="flex items-center gap-3">
-          <Social href={profile.social.linkedin} label="LinkedIn">
+          <Social href="https://www.linkedin.com/in/ibrahim-abdo-217817224/" label="LinkedIn">
             <Linkedin size={16} />
           </Social>
           <Social href={profile.social.instagram} label="Instagram">

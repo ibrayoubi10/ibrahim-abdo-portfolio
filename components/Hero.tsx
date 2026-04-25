@@ -123,7 +123,11 @@ export default function Hero() {
 
           <div className="glow-card relative overflow-hidden rounded-[2rem] border border-white/10 bg-gradient-to-br from-brand-surface to-[#1a0833] p-1.5 shadow-2xl">
             <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[1.6rem] bg-gradient-to-br from-brand-violet/30 via-brand-pink/20 to-brand-orange/20">
-              <PortraitPlaceholder />
+              <img
+                  src="/profile.jpg"
+                  alt="Ibrahim Abdo"
+                  className="absolute inset-0 h-full w-full object-cover"
+                />
 
               {/* Floating badges */}
               <motion.div
@@ -145,61 +149,5 @@ export default function Hero() {
         </motion.div>
       </div>
     </section>
-  );
-}
-
-function PortraitPlaceholder() {
-  return (
-    <svg
-      viewBox="0 0 400 500"
-      xmlns="http://www.w3.org/2000/svg"
-      className="absolute inset-0 h-full w-full"
-      aria-label="Portrait placeholder"
-    >
-      <defs>
-        <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0%" stopColor="#1a0833" />
-          <stop offset="100%" stopColor="#0a0118" />
-        </linearGradient>
-        <linearGradient id="suit" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stopColor="#1e1b4b" />
-          <stop offset="100%" stopColor="#0f0c29" />
-        </linearGradient>
-        <radialGradient id="halo" cx="50%" cy="40%" r="60%">
-          <stop offset="0%" stopColor="rgba(236,72,153,0.35)" />
-          <stop offset="100%" stopColor="transparent" />
-        </radialGradient>
-      </defs>
-      <rect width="400" height="500" fill="url(#bg)" />
-      <circle cx="200" cy="200" r="200" fill="url(#halo)" />
-      {/* Head */}
-      <circle cx="200" cy="190" r="70" fill="#3a2a4a" />
-      {/* Beard hint */}
-      <path d="M150,210 Q200,260 250,210 L250,230 Q200,275 150,230 Z" fill="#1f1530" />
-      {/* Glasses */}
-      <circle cx="178" cy="180" r="14" stroke="#fbbf24" strokeWidth="2" fill="none" />
-      <circle cx="222" cy="180" r="14" stroke="#fbbf24" strokeWidth="2" fill="none" />
-      <line x1="192" y1="180" x2="208" y2="180" stroke="#fbbf24" strokeWidth="2" />
-      {/* Body / Suit */}
-      <path
-        d="M80,500 L80,360 Q200,280 320,360 L320,500 Z"
-        fill="url(#suit)"
-      />
-      {/* Shirt */}
-      <path d="M170,500 L170,330 Q200,360 230,330 L230,500 Z" fill="#f5f3ff" />
-      {/* Tie */}
-      <path d="M195,330 L205,330 L210,420 L200,500 L190,420 Z" fill="#1e1b4b" />
-      <text
-        x="200"
-        y="478"
-        textAnchor="middle"
-        fontFamily="sans-serif"
-        fontSize="11"
-        fill="#a78bfa"
-        opacity="0.6"
-      >
-        Replace /public/profile.jpg
-      </text>
-    </svg>
   );
 }
